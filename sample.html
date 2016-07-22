@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="//player.ooyala.com/static/v4/stable/4.5.5/core.min.js"></script>
+  <script src="//player.ooyala.com/static/v4/stable/4.5.5/video-plugin/main_html5.min.js"></script>
+  <script src="//player.ooyala.com/static/v4/stable/4.5.5/video-plugin/osmf_flash.min.js"></script>
+  <script src="//player.ooyala.com/static/v4/stable/4.5.5/video-plugin/bit_wrapper.min.js"></script>
+  <script src="//player.ooyala.com/static/v4/stable/4.5.5/other-plugin/discovery_api.min.js"></script>
+  <script src="html5-skin.min.js"></script>
+  <link rel="stylesheet" href="html5-skin.min.css"/>
+</head>
+
+<body>
+<div id='container' style='width:600px;height:400px;'></div>
+<script>
+  var playerParam = {
+    "pcode": "BtbmUyOlamRiH-S0S-iUeNvf_ghr",
+    "playerBrandingId": "7267438d470c471eb75a165a8b670617",
+    'debug':true,
+    "skin": {
+      "config": "skin.json",
+      "inline": {"shareScreen": {"embed": {"source": "<iframe width='640' height='480' frameborder='0' allowfullscreen src='//player.ooyala.com/static/v4/stable/4.5.5/skin-plugin/iframe.html?ec=<ASSET_ID>&pbid=<PLAYER_ID>&pcode=<PUBLISHER_ID>'></iframe>"}}}
+    }
+  };
+  OO.ready(function() {
+    window.pp = OO.Player.create('container', 'J2NnFuMjE6Tb_t7_n_90z5pq8PGoM4wN', playerParam);
+  });
+</script>
+
+</body>
+</html>
