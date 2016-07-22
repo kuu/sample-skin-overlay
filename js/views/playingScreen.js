@@ -124,6 +124,8 @@ var PlayingScreen = React.createClass({
 
       <div className="oo-state-screen-selectable" onMouseUp={this.handlePlayerMouseUp} onTouchEnd={this.handleTouchEnd}></div>
 
+      <div className="oo-playing-overlay" />
+
       <div className="oo-interactive-container">
 
         <TextTrack
