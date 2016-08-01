@@ -1057,7 +1057,7 @@ OO.plugin("Html5Skin", function (OO, _, $, W) {
           this.mb.publish(OO.EVENTS.PLAY);
           break;
         case CONSTANTS.STATE.PLAYING:
-          this.mb.publish(OO.EVENTS.PAUSE);
+          // this.mb.publish(OO.EVENTS.PAUSE);
           break;
       }
     },

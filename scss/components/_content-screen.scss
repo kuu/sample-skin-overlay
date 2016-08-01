@@ -29,8 +29,19 @@
 }
 
 .oo-playing-overlay {
-  background-image: url("assets/images/overlay.png");
-  background-position: center;
+  background-position: right bottom;
+  background-repeat: no-repeat;
   height: 100%;
   width: 100%;
+  opacity: 0.5;
+}
+
+.oo-playing-overlay-normal {
+  @extend .oo-playing-overlay;
+  background-image: url("assets/images/overlay.png");
+}
+
+.oo-playing-overlay-large {
+  @extend .oo-playing-overlay;
+  background-image: url("assets/images/overlay-large.png");
 }

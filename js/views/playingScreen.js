@@ -124,7 +124,7 @@ var PlayingScreen = React.createClass({
 
       <div className="oo-state-screen-selectable" onMouseUp={this.handlePlayerMouseUp} onTouchEnd={this.handleTouchEnd}></div>
 
-      <div className="oo-playing-overlay" />
+      {!this.isMobile && this.props.fullscreen ? <div className="oo-playing-overlay-large" /> : <div className="oo-playing-overlay-normal" />}
 
       <div className="oo-interactive-container">
 

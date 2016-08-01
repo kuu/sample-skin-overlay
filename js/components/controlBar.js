@@ -421,7 +421,6 @@ var ControlBar = React.createClass({
 
     return (
       <div className={controlBarClass} onMouseUp={this.handleControlBarMouseUp} onTouchEnd={this.handleControlBarMouseUp}>
-        <ScrubberBar {...this.props} />
 
         <div className="oo-control-bar-items-wrapper">
           {controlBarItems}
