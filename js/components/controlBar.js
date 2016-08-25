@@ -247,6 +247,7 @@ var ControlBar = React.createClass({
       </button>,
 
       "live": <button className={liveClass}
+          style={dynamicStyles.liveIndicatorStyle}
           ref="LiveButton"
           onClick={liveClick} key="live">
         <div className="oo-live-circle"></div>
@@ -407,6 +408,9 @@ var ControlBar = React.createClass({
       opacity: this.props.skinConfig.controlBar.iconStyle.inactive.opacity
 
     };
+    if (this.props.isLiveStream) {
+      returnStyles.liveIndicatorStyle = {top: (-5 * this.responsiveUIMultiple) + 'px'};
+    }
     return returnStyles;
   },
 
